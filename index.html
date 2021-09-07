@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style media="screen"></style>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+  <div class="main" id="main">
+    <div class="register">
+      <div class="modal-header">
+        <button type="button" class="close" onclick="showHide()" data-dismiss="modal" aria-label="Close"><span
+            aria-hidden="true">&times;</span></button>
+      </div>
+<br>
+      <h2>हिन्दी दिवस </h2>
+      <form id="register" method="post">
+        <label>नाम ( User Name)</label>
+        <br>
+        <input type="text" name="uname" id="name" required>
+        <br><br>
+        <label>अणुडाक(Email)</label>
+        <br>
+        <input type="text" name="email" id="name" required>
+        <br><br>
+        <label>संपर्क सूत्र (Mobile No.)</label>
+        <br>
+        <input type="tel" name="Mobile No." id="name">
+        <br><br>
+        <label>अनुक्रमांक (Scholar No.)</label>
+        <br>
+        <input type="text" name="Scholar No." id="name">
+        <br><br>
+        <label>विभाग (Department)</label>
+        <br>
+        <input type="text" name="department" id="name">
+        <br><br>
+        <label>महाविद्यालय (College)</label>
+        <br>
+        <input type="text" name="college" id="name" value="" required>
+        <br><br>
+        <div class="modal-footer">
+          <button type="button" class="btn-default" onclick="showHide()" data-dismiss="modal">बंद करें</button>
+          <button name="submit" id="submit" value="submit" type="submit" class="btn-primary">पंजीयन करें</button>
+        </div>
+      </form>
+
+
+
+
+    </div>
+  </div>
+
+
+  <!-- for sign up button  -->
+  <div class="signup" id="signup" ()">
+<p>Lorem ipsum dolor sit amet. Et iure voluptatem ut quia provident cum rerum corrupti in deserunt soluta ut voluptatum alias. Et tempore sapiente est deserunt architecto non laborum rerum qui dolores officia id ipsa modi et nostrum voluptatem ut perferendis eligendi? Ut officiis nihil eos rerum explicabo sit debitis consequatur ut aspernatur enim eos quis tempora. Eos harum corporis et voluptatibus facere eos neque rerum.</p>
+<br><br>
+   <button type="" class="signup_btn" onclick="showHide()"><h1>पंजीकरण करें</h1></button>
+  </div>
+
+
+
+
+  <script>
+    let signup = document.getElementById("signup");
+    let main = document.getElementById("main");
+    let done = true
+  
+    function showHide() {
+      if (done) {
+        main.style.display = "block";
+        signup.style.display = "none";
+        done = false;
+      } else {
+        main.style.display = "none";
+        signup.style.display = "flex";
+        done = true;
+      }
+      
+    }
+
+  </script>
+</body>
+
+</html>
